@@ -1,6 +1,6 @@
-======================
+
 Boarding Pass Sorter
-======================
+=====================
 
 Overview
 --------
@@ -22,7 +22,11 @@ To use this code, follow these steps:
 3. Navigate to the directory containing the code.
 4. Run the code using Python:
 
+
+
+```
 python main.py
+```
 
 
 
@@ -41,8 +45,11 @@ The input for this code consists of a list of unordered boarding passes, where e
 - `'baggage_info'` (optional): Baggage information.
 
 Example Input:
+-------------
 
-```python
+change these according to use cases inside main.py file 
+
+```
 boarding_passes = [
  {
      'transport_type': 'train',
@@ -58,11 +65,16 @@ boarding_passes = [
 
 ]
 
+```
+
+
 Output Format
+---------
 The code will generate a sorted list of instructions as strings. Each instruction will provide details on how to complete a specific leg of the journey, including transportation type, departure, arrival, gate (if applicable), seat assignment (if applicable), and baggage information (if applicable). The final instruction indicates the arrival at the final destination.
 
 
 Example Output:
+------
 1. Take train 78A from Madrid to Barcelona. Sit in seat 45B.
 2. Take the airport bus from Barcelona to Gerona Airport. No seat assignment.
 3. From Gerona Airport, take flight SK455 to Stockholm. Gate 45B, seat 3A. Baggage drop at ticket counter 344.
@@ -72,5 +84,5 @@ Example Output:
 
 
 Contact
+-----
 For any questions or issues, please contact Fawas at fawazzist@gmail.com.
-
