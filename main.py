@@ -33,13 +33,13 @@ def main():
         },
     ]
 
-    # Create a BoardingPassSorter instance
+    # Creating a BoardingPassSorter instance
     sorter = BoardingPassSorter(boarding_passes)
 
     # Sort the boarding passes
     sorter.sort_boarding_passes()
 
-    # Generate and display instructions
+    # Generating and displaying instructions
     instructions = sorter.generate_instructions()
 
     for instruction in instructions:

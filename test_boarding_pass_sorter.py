@@ -4,7 +4,7 @@ from Boarding_pass_sorter import BoardingPassSorter
 
 class TestBoardingPassSorter(unittest.TestCase):
     def test_sort_boarding_passes(self):
-        # Create a list of unordered boarding passes for testing
+        # a list of unordered boarding passes for testing
         boarding_passes = [
             {
                 'transport_type': 'train',
@@ -35,7 +35,7 @@ class TestBoardingPassSorter(unittest.TestCase):
             },
         ]
 
-        # Create a BoardingPassSorter instance and sort the boarding passes
+        # Creating a BoardingPassSorter instance and sort the boarding passes
         sorter = BoardingPassSorter(boarding_passes)
         sorter.sort_boarding_passes()
 
@@ -46,7 +46,7 @@ class TestBoardingPassSorter(unittest.TestCase):
         )
 
     def test_generate_instructions(self):
-        # Create a list of sorted boarding passes for testing
+        # Creating a list of sorted boarding passes for testing
         boarding_passes = [
             {
                 'transport_type': 'train',
@@ -77,7 +77,7 @@ class TestBoardingPassSorter(unittest.TestCase):
             },
         ]
 
-        # Create a BoardingPassSorter instance
+        # Creating a BoardingPassSorter instance
         sorter = BoardingPassSorter(boarding_passes)
 
         # Generate instructions from the sorted boarding passes
